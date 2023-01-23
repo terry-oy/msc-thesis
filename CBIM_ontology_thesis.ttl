@@ -1,0 +1,215 @@
+@prefix CBIM: <http://example.org/CBIM-Ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/CBIM_Ontology#> rdf:type owl:Ontology .
+
+
+CBIM:RelFunctional rdf:type owl:ObjectProperty ;
+			 rdfs:domain CBIM:Element ;
+               	 rdfs:range CBIM:Element .
+
+
+CBIM:attach rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf CBIM:RelFunctional .
+
+
+CBIM:attachedBy rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf CBIM:RelFunctional .
+
+
+CBIM:correspondsTo rdf:type owl:ObjectProperty ;
+               	 rdfs:subPropertyOf CBIM:RelFunctional .
+
+
+CBIM:host rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf CBIM:RelFunctional .
+
+
+CBIM:hostedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf CBIM:RelFunctional .
+
+
+CBIM:hasObject rdf:type owl:ObjectProperty ,
+    	                  owl:FunctionalProperty ;
+           	   rdfs:domain CBIM:ObjectifiedRelationship ;
+          	   rdfs:range CBIM:Element .
+
+
+CBIM:hasSubject rdf:type owl:ObjectProperty ,
+                     	 owl:FunctionalProperty ;
+                rdfs:domain CBIM:ObjectifiedRelationship ;
+                rdfs:range CBIM:Element .
+
+
+
+CBIM:Dimension rdf:type owl:DatatypeProperty ;
+           	   rdfs:subPropertyOf CBIM:RelConstraintProperties ;
+           	   rdfs:range xsd:string .
+
+
+CBIM:Operator rdf:type owl:DatatypeProperty ;
+          	  rdfs:subPropertyOf CBIM:RelConstraintProperties ;
+         	  rdfs:range xsd:string .
+
+
+CBIM:RelConstraintProperties rdf:type owl:DatatypeProperty ;
+                     	     rdfs:domain CBIM:RelConstraint .
+
+
+CBIM:RelSpatialProperties rdf:type owl:DatatypeProperty ;
+                      	  rdfs:domain CBIM:RelSpatial .
+
+
+
+CBIM:inContact rdf:type owl:DatatypeProperty ;
+           	   rdfs:subPropertyOf CBIM:RelSpatialProperties ;
+               rdfs:range xsd:boolean .
+
+
+CBIM:isFulfilled rdf:type owl:DatatypeProperty ;
+           	     rdfs:subPropertyOf CBIM:RelConstraintProperties ;
+           	     rdfs:range xsd:boolean .
+
+
+CBIM:offset rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf CBIM:RelSpatialProperties ;
+            rdfs:range xsd:string .
+
+
+CBIM:topology rdf:type owl:DatatypeProperty ;
+          	  rdfs:subPropertyOf CBIM:RelSpatialProperties ;
+         	  rdfs:range xsd:string .
+
+
+<https://w3id.org/express#hasBoolean> rdf:type owl:DatatypeProperty ,
+                                               owl:FunctionalProperty .
+
+
+<https://w3id.org/express#hasDouble> rdf:type owl:DatatypeProperty ,
+                                              owl:FunctionalProperty .
+
+
+<https://w3id.org/express#hasString> rdf:type owl:DatatypeProperty ,
+                                              owl:FunctionalProperty .
+
+
+
+###  http://example.org/CBIM_Ontology#BBoxAreaConstraint
+CBIM:BBoxAreaConstraint rdf:type owl:Class ;
+                    rdfs:subClassOf CBIM:BBoxConstraint .
+
+
+###  http://example.org/CBIM_Ontology#BBoxConstraint
+CBIM:BBoxConstraint rdf:type owl:Class ;
+                rdfs:subClassOf CBIM:RelConstraint .
+
+
+###  http://example.org/CBIM_Ontology#BBoxDimensionConstraint
+CBIM:BBoxDimensionConstraint rdf:type owl:Class ;
+                         rdfs:subClassOf CBIM:BBoxConstraint .
+
+
+###  http://example.org/CBIM_Ontology#BBoxSpatialConstraint
+CBIM:BBoxSpatialConstraint rdf:type owl:Class ;
+                       rdfs:subClassOf CBIM:BBoxConstraint .
+
+
+###  http://example.org/CBIM_Ontology#BBoxVolumeConstraint
+CBIM:BBoxVolumeConstraint rdf:type owl:Class ;
+                      rdfs:subClassOf CBIM:BBoxConstraint .
+
+
+###  http://example.org/CBIM_Ontology#Element
+CBIM:Element rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty CBIM:RelFunctional ;
+                           owl:allValuesFrom CBIM:Element
+                         ] .
+
+
+###  http://example.org/CBIM_Ontology#ExactGeometryAreaConstraint
+CBIM:ExactGeometryAreaConstraint rdf:type owl:Class ;
+                             rdfs:subClassOf CBIM:ExactGeometryConstraint .
+
+
+###  http://example.org/CBIM_Ontology#ExactGeometryConstraint
+CBIM:ExactGeometryConstraint rdf:type owl:Class ;
+                         rdfs:subClassOf CBIM:RelConstraint .
+
+
+###  http://example.org/CBIM_Ontology#ExactGeometrySpatialConstraint
+CBIM:ExactGeometrySpatialConstraint rdf:type owl:Class ;
+                                rdfs:subClassOf CBIM:ExactGeometryConstraint .
+
+
+###  http://example.org/CBIM_Ontology#ExactGeometryVolumeConstraint
+CBIM:ExactGeometryVolumeConstraint rdf:type owl:Class ;
+                               rdfs:subClassOf CBIM:ExactGeometryConstraint .
+
+
+###  http://example.org/CBIM_Ontology#ObjectifiedRelationship
+CBIM:ObjectifiedRelationship rdf:type owl:Class ;
+                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                           owl:onProperty CBIM:hasObject ;
+                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass CBIM:Element
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty CBIM:hasSubject ;
+                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass CBIM:Element
+                                         ] .
+
+
+###  http://example.org/CBIM_Ontology#RelConstraint
+CBIM:RelConstraint rdf:type owl:Class ;
+               rdfs:subClassOf CBIM:ObjectifiedRelationship ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty CBIM:Dimension ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty CBIM:Operator ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty CBIM:isFulfilled ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:boolean
+                               ] .
+
+
+###  http://example.org/CBIM_Ontology#RelSpatial
+CBIM:RelSpatial rdf:type owl:Class ;
+            rdfs:subClassOf CBIM:ObjectifiedRelationship ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty CBIM:inContact ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:boolean
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty CBIM:offset ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty CBIM:topology ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf CBIM:Element .
+
+
+###  https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> rdf:type owl:Class ;
+                               rdfs:subClassOf CBIM:Element .

@@ -1,0 +1,995 @@
+@prefix CBIM: <http://example.org/CBIM-Ontology#> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix domain: <http://example.org/domains/> .
+@prefix fog: <https://w3id.org/fog#> .
+@prefix arc: <http://example.org/resources/arc/> .
+@prefix str: <http://example.org/resources/str/> .
+@prefix rvtprop: <http://example.org/revitprops#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+domain:architecture {
+    arc:Site_7f70fb92-8b7f-42e5-9898-4667e717d385-000150bc a bot:Site ;
+        rvtprop:category "Site" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:id "86204" ;
+        rvtprop:uniqueId "7f70fb92-8b7f-42e5-9898-4667e717d385-000150bc" ;
+        bot:hasBuilding arc:Building_7467146f-b055-4141-9e39-c6968830c082 .
+
+    arc:Building_7467146f-b055-4141-9e39-c6968830c082 a bot:Building ;
+        rvtprop:category "Building" ;
+        rvtprop:id "None" ;
+        rvtprop:uniqueId "7467146f-b055-4141-9e39-c6968830c082" ;
+        bot:hasStorey arc:Levels_458c0e49-01bb-11d5-9302-0000863f27ad-000002b6,
+            arc:Levels_e3e052f9-0156-11d5-9301-0000863f27ad-00000137 .
+
+    arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d a bot:Element ;
+        rvtprop:area 3.1e+07 ;
+        rvtprop:category "Floors" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:elevationatBottom -1.5e+02 ;
+        rvtprop:elevationatTop 0e+00 ;
+        rvtprop:enableAnalyticalModel false ;
+        rvtprop:family "Floor" ;
+        rvtprop:familyandType "Floor" ;
+        rvtprop:heightOffsetFromLevel 0e+00 ;
+        rvtprop:id "352301" ;
+        rvtprop:level "Level1" ;
+        rvtprop:perimeter 2.24e+04 ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:relatedtoMass false ;
+        rvtprop:roomBounding true ;
+        rvtprop:slope 0e+00 ;
+        rvtprop:structural false ;
+        rvtprop:thickness 1.5e+02 ;
+        rvtprop:type "Generic150mm" ;
+        rvtprop:typeId "339" ;
+        rvtprop:uniqueId "c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d" ;
+        rvtprop:volume 4.67e+09 ;
+        bot:hasSimple3DModel "-50.0, -50.0, -150.0, 6050.0, 5050.0, 0.0" ;
+        fog:asPly "./database_arc/c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d.ply" .
+
+    arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 a bot:Element ;
+        rvtprop:area 3.1e+07 ;
+        rvtprop:category "Floors" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:elevationatBottom 3.85e+03 ;
+        rvtprop:elevationatTop 4.075e+03 ;
+        rvtprop:enableAnalyticalModel false ;
+        rvtprop:family "Floor" ;
+        rvtprop:familyandType "Floor" ;
+        rvtprop:heightOffsetFromLevel 7.5e+01 ;
+        rvtprop:id "352690" ;
+        rvtprop:level "Level2" ;
+        rvtprop:perimeter 2.24e+04 ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:relatedtoMass false ;
+        rvtprop:roomBounding true ;
+        rvtprop:slope 0e+00 ;
+        rvtprop:structural false ;
+        rvtprop:thickness 2.25e+02 ;
+        rvtprop:type "InsituConcrete225mm" ;
+        rvtprop:typeId "786" ;
+        rvtprop:uniqueId "c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2" ;
+        rvtprop:volume 7e+09 ;
+        bot:hasSimple3DModel "-50.0, -50.0, 3850.0, 6050.0, 5050.0, 4075.0" ;
+        fog:asPly "./database_arc/c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2.ply" .
+
+    arc:Levels_458c0e49-01bb-11d5-9302-0000863f27ad-000002b6 a bot:Storey ;
+        rvtprop:buildingStory true ;
+        rvtprop:category "Levels" ;
+        rvtprop:computationHeight 0e+00 ;
+        rvtprop:designOption "-1" ;
+        rvtprop:elevation 4e+03 ;
+        rvtprop:family "Level" ;
+        rvtprop:familyandType "Level" ;
+        rvtprop:id "694" ;
+        rvtprop:name "Level2" ;
+        rvtprop:storyAbove "Default" ;
+        rvtprop:structural false ;
+        rvtprop:type "8mmHead" ;
+        rvtprop:typeId "305" ;
+        rvtprop:uniqueId "458c0e49-01bb-11d5-9302-0000863f27ad-000002b6" ;
+        bot:containsElement arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 .
+
+    arc:Levels_e3e052f9-0156-11d5-9301-0000863f27ad-00000137 a bot:Storey ;
+        rvtprop:buildingStory true ;
+        rvtprop:category "Levels" ;
+        rvtprop:computationHeight 0e+00 ;
+        rvtprop:designOption "-1" ;
+        rvtprop:elevation 0e+00 ;
+        rvtprop:family "Level" ;
+        rvtprop:familyandType "Level" ;
+        rvtprop:id "311" ;
+        rvtprop:name "Level1" ;
+        rvtprop:storyAbove "Default" ;
+        rvtprop:structural false ;
+        rvtprop:type "8mmHead" ;
+        rvtprop:typeId "305" ;
+        rvtprop:uniqueId "e3e052f9-0156-11d5-9301-0000863f27ad-00000137" ;
+        bot:containsElement arc:Doors_0b37f40b-ef7e-432a-aefa-c451d086a249-000b6814,
+            arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d,
+            arc:Walls_79c4944d-ebc6-4521-b789-57160c34fce1-000b6aee,
+            arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756,
+            arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0,
+            arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055869,
+            arc:Windows_0b37f40b-ef7e-432a-aefa-c451d086a249-000a4e2b .
+
+    arc:Walls_79c4944d-ebc6-4521-b789-57160c34fce1-000b6aee a bot:Element ;
+        rvtprop:area 2.1e+07 ;
+        rvtprop:baseConstraint "Level1" ;
+        rvtprop:baseExtensionDistance 0e+00 ;
+        rvtprop:baseOffset 0e+00 ;
+        rvtprop:baseisAttached true ;
+        rvtprop:category "Walls" ;
+        rvtprop:cross-Section "Vertical" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:direction_vector "5800.0, 0.0, 0.0" ;
+        rvtprop:enableAnalyticalModel false ;
+        rvtprop:endpoint_xyz "5900.0, 4900.0, 0.0" ;
+        rvtprop:family "BasicWall" ;
+        rvtprop:familyandType "BasicWall" ;
+        rvtprop:id "748270" ;
+        rvtprop:length 5.8e+03 ;
+        rvtprop:locationLine "FinishFace" ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:relatedtoMass false ;
+        rvtprop:roomBounding true ;
+        rvtprop:startpoint_xyz "100.0, 4900.0, 0.0" ;
+        rvtprop:structural false ;
+        rvtprop:structuralUsage "Non-bearing" ;
+        rvtprop:topConstraint "Uptolevel" ;
+        rvtprop:topExtensionDistance 0e+00 ;
+        rvtprop:topOffset 0e+00 ;
+        rvtprop:topisAttached true ;
+        rvtprop:type "Generic-200mm" ;
+        rvtprop:typeId "398" ;
+        rvtprop:unconnectedHeight 4e+03 ;
+        rvtprop:uniqueId "79c4944d-ebc6-4521-b789-57160c34fce1-000b6aee" ;
+        rvtprop:volume 6.35e+09 ;
+        bot:hasSimple3DModel "250.0, 4750.0, 0.0, 5750.0, 5050.0, 3850.0" ;
+        fog:asPly "./database_arc/79c4944d-ebc6-4521-b789-57160c34fce1-000b6aee.ply" .
+
+    arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 a bot:Element ;
+        rvtprop:area 2e+07 ;
+        rvtprop:baseConstraint "Level1" ;
+        rvtprop:baseExtensionDistance 0e+00 ;
+        rvtprop:baseOffset 0e+00 ;
+        rvtprop:baseisAttached true ;
+        rvtprop:category "Walls" ;
+        rvtprop:cross-Section "Vertical" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:direction_vector "0.0, 4800.0, 0.0" ;
+        rvtprop:enableAnalyticalModel false ;
+        rvtprop:endpoint_xyz "100.0, 4900.0, 0.0" ;
+        rvtprop:family "BasicWall" ;
+        rvtprop:familyandType "BasicWall" ;
+        rvtprop:id "350038" ;
+        rvtprop:length 4.8e+03 ;
+        rvtprop:locationLine "FinishFace" ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:relatedtoMass false ;
+        rvtprop:roomBounding true ;
+        rvtprop:startpoint_xyz "100.0, 100.0, 0.0" ;
+        rvtprop:structural false ;
+        rvtprop:structuralUsage "Non-bearing" ;
+        rvtprop:topConstraint "Uptolevel" ;
+        rvtprop:topExtensionDistance 0e+00 ;
+        rvtprop:topOffset 0e+00 ;
+        rvtprop:topisAttached true ;
+        rvtprop:type "Generic-200mm" ;
+        rvtprop:typeId "398" ;
+        rvtprop:unconnectedHeight 4e+03 ;
+        rvtprop:uniqueId "c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756" ;
+        rvtprop:volume 5.89e+09 ;
+        bot:hasSimple3DModel "-50.0, -50.0, 0.0, 250.0, 5050.0, 3850.0" ;
+        fog:asPly "./database_arc/c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756.ply" .
+
+    arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 a bot:Element ;
+        rvtprop:area 1.8e+07 ;
+        rvtprop:baseConstraint "Level1" ;
+        rvtprop:baseExtensionDistance 0e+00 ;
+        rvtprop:baseOffset 0e+00 ;
+        rvtprop:baseisAttached true ;
+        rvtprop:category "Walls" ;
+        rvtprop:cross-Section "Vertical" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:direction_vector "0.0, -4800.0, 0.0" ;
+        rvtprop:enableAnalyticalModel false ;
+        rvtprop:endpoint_xyz "5900.0, 100.0, 0.0" ;
+        rvtprop:family "BasicWall" ;
+        rvtprop:familyandType "BasicWall" ;
+        rvtprop:id "350192" ;
+        rvtprop:length 4.8e+03 ;
+        rvtprop:locationLine "FinishFace" ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:relatedtoMass false ;
+        rvtprop:roomBounding true ;
+        rvtprop:startpoint_xyz "5900.0, 4900.0, 0.0" ;
+        rvtprop:structural false ;
+        rvtprop:structuralUsage "Non-bearing" ;
+        rvtprop:topConstraint "Uptolevel" ;
+        rvtprop:topExtensionDistance 0e+00 ;
+        rvtprop:topOffset 0e+00 ;
+        rvtprop:topisAttached true ;
+        rvtprop:type "Generic-200mm" ;
+        rvtprop:typeId "398" ;
+        rvtprop:unconnectedHeight 4e+03 ;
+        rvtprop:uniqueId "c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0" ;
+        rvtprop:volume 5.39e+09 ;
+        bot:hasSimple3DModel "5750.0, -50.0, 0.0, 6050.0, 5050.0, 3850.0" ;
+        bot:hasSubElement arc:Windows_0b37f40b-ef7e-432a-aefa-c451d086a249-000a4e2b ;
+        fog:asPly "./database_arc/c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0.ply" .
+
+    arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055869 a bot:Element ;
+        rvtprop:area 1.9e+07 ;
+        rvtprop:baseConstraint "Level1" ;
+        rvtprop:baseExtensionDistance 0e+00 ;
+        rvtprop:baseOffset 0e+00 ;
+        rvtprop:baseisAttached true ;
+        rvtprop:category "Walls" ;
+        rvtprop:cross-Section "Vertical" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:direction_vector "-5800.0, 0.0, 0.0" ;
+        rvtprop:enableAnalyticalModel false ;
+        rvtprop:endpoint_xyz "100.0, 100.0, 0.0" ;
+        rvtprop:family "BasicWall" ;
+        rvtprop:familyandType "BasicWall" ;
+        rvtprop:id "350313" ;
+        rvtprop:length 5.8e+03 ;
+        rvtprop:locationLine "FinishFace" ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:relatedtoMass false ;
+        rvtprop:roomBounding true ;
+        rvtprop:startpoint_xyz "5900.0, 100.0, 0.0" ;
+        rvtprop:structural false ;
+        rvtprop:structuralUsage "Non-bearing" ;
+        rvtprop:topConstraint "Uptolevel" ;
+        rvtprop:topExtensionDistance 0e+00 ;
+        rvtprop:topOffset 0e+00 ;
+        rvtprop:topisAttached true ;
+        rvtprop:type "Generic-200mm" ;
+        rvtprop:typeId "398" ;
+        rvtprop:unconnectedHeight 4e+03 ;
+        rvtprop:uniqueId "c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055869" ;
+        rvtprop:volume 5.65e+09 ;
+        bot:hasSimple3DModel "250.0, -50.0, 0.0, 5750.0, 250.0, 3850.0" ;
+        bot:hasSubElement arc:Doors_0b37f40b-ef7e-432a-aefa-c451d086a249-000b6814 ;
+        fog:asPly "./database_arc/c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055869.ply" .
+
+    arc:Doors_0b37f40b-ef7e-432a-aefa-c451d086a249-000b6814 a bot:Element ;
+        rvtprop:area 4e+06 ;
+        rvtprop:category "Doors" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:doorOffset 0e+00 ;
+        rvtprop:exteriorTrim true ;
+        rvtprop:family "M_Door-Exterior-Single-Entry-HalfArchGlass-Wood_Clad" ;
+        rvtprop:familyandType "M_Door-Exterior-Single-Entry-HalfArchGlass-Wood_Clad" ;
+        rvtprop:headHeight 2.2e+03 ;
+        rvtprop:hostId "350313" ;
+        rvtprop:id "747540" ;
+        rvtprop:level "Level1" ;
+        rvtprop:mark 2e+00 ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:point "1775.0, 100.0, 0.0" ;
+        rvtprop:sillHeight 0e+00 ;
+        rvtprop:swingAngle 9e+01 ;
+        rvtprop:threshold true ;
+        rvtprop:thresholdOffset 1.5e+01 ;
+        rvtprop:type "1000x2200mm" ;
+        rvtprop:typeId "747677" ;
+        rvtprop:uniqueId "0b37f40b-ef7e-432a-aefa-c451d086a249-000b6814" ;
+        rvtprop:volume 9e+07 ;
+        bot:hasSimple3DModel "1250.0, -50.0, 0.0, 2300.0, 250.0, 2225.0" ;
+        fog:asPly "./database_arc/0b37f40b-ef7e-432a-aefa-c451d086a249-000b6814.ply" .
+
+    arc:Windows_0b37f40b-ef7e-432a-aefa-c451d086a249-000a4e2b a bot:Element ;
+        rvtprop:area 4e+06 ;
+        rvtprop:category "Windows" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:family "M_Fixed" ;
+        rvtprop:familyandType "M_Fixed" ;
+        rvtprop:headHeight 2.629e+03 ;
+        rvtprop:hostId "350192" ;
+        rvtprop:id "675371" ;
+        rvtprop:level "Level1" ;
+        rvtprop:mark 2e+00 ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:point "5900.0, 2500.0, 799.4" ;
+        rvtprop:sillHeight 7.99e+02 ;
+        rvtprop:type "0915x1830mm" ;
+        rvtprop:typeId "33083" ;
+        rvtprop:uniqueId "0b37f40b-ef7e-432a-aefa-c451d086a249-000a4e2b" ;
+        rvtprop:volume 7e+07 ;
+        bot:hasSimple3DModel "5750.0, 2042.5, 799.4, 6050.0, 2957.5, 2629.4" ;
+        fog:asPly "./database_arc/0b37f40b-ef7e-432a-aefa-c451d086a249-000a4e2b.ply" .
+}
+
+domain:CBIM {
+    CBIM:BBoxSpatialConstraint_489f1cc0-8beb-4b68-b947-8630fd0a7322 a CBIM:BBoxSpatialConstraint ;
+        CBIM:Dimension "Z" ;
+        CBIM:Operator "Contain" ;
+        CBIM:hasObject str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d ;
+        CBIM:isFulfilled true .
+
+    CBIM:BBoxSpatialConstraint_9dde069a-a4ef-48ca-9337-de48abdd1267 a CBIM:BBoxSpatialConstraint ;
+        CBIM:Dimension "Z" ;
+        CBIM:Operator "Contain" ;
+        CBIM:hasObject str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 ;
+        CBIM:isFulfilled true .
+
+    CBIM:ExactGeometrySpatialConstraint_09ee79c6-248d-4ef5-aa9a-b2ccded57f2e a CBIM:ExactGeometrySpatialConstraint ;
+        CBIM:Dimension "XY" ;
+        CBIM:Operator "Contain" ;
+        CBIM:hasObject str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 ;
+        CBIM:isFulfilled true .
+
+    CBIM:ExactGeometrySpatialConstraint_27e5d07e-f50e-4bed-ad56-55d3c4d5dac9 a CBIM:ExactGeometrySpatialConstraint ;
+        CBIM:Dimension "XY" ;
+        CBIM:Operator "AlmostEqual" ;
+        CBIM:hasObject str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d ;
+        CBIM:isFulfilled true .
+
+    CBIM:ExactGeometrySpatialConstraint_36060f8d-9d13-494c-b3dd-c87bad657bae a CBIM:ExactGeometrySpatialConstraint ;
+        CBIM:Operator "Contain" ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-000665b0 ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 ;
+        CBIM:isFulfilled true .
+
+    CBIM:ExactGeometrySpatialConstraint_419e4376-ef99-49d2-9ac5-ceb69f0dbcc8 a CBIM:ExactGeometrySpatialConstraint ;
+        CBIM:Operator "Contain" ;
+        CBIM:hasObject str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 ;
+        CBIM:isFulfilled true .
+
+    CBIM:ExactGeometrySpatialConstraint_761fe770-737f-4293-a2aa-f22e70be5e2e a CBIM:ExactGeometrySpatialConstraint ;
+        CBIM:Operator "Contain" ;
+        CBIM:hasObject str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99 ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 ;
+        CBIM:isFulfilled true .
+
+    CBIM:ExactGeometrySpatialConstraint_7ebf153b-5ddb-4932-9220-42503dbd6a0a a CBIM:ExactGeometrySpatialConstraint ;
+        CBIM:Dimension "XY" ;
+        CBIM:Operator "AlmostEqual" ;
+        CBIM:hasObject str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 ;
+        CBIM:isFulfilled true .
+
+    CBIM:ExactGeometrySpatialConstraint_b54a8f7c-2807-4c23-a30d-c75eb53ccf81 a CBIM:ExactGeometrySpatialConstraint ;
+        CBIM:Operator "Contain" ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066487 ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 ;
+        CBIM:isFulfilled true .
+
+    CBIM:ExactGeometrySpatialConstraint_c86acd7b-15c3-40c1-8cbe-82103d09558f a CBIM:ExactGeometrySpatialConstraint ;
+        CBIM:Operator "Contain" ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066405 ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 ;
+        CBIM:isFulfilled true .
+
+    CBIM:ExactGeometrySpatialConstraint_ede25be1-46e0-4de0-83ad-49071a3b768e a CBIM:ExactGeometrySpatialConstraint ;
+        CBIM:Operator "Contain" ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-0006670f ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 ;
+        CBIM:isFulfilled true .
+
+    CBIM:ExactGeometrySpatialConstraint_fc98e113-4295-4e40-9b67-06691d0cd8af a CBIM:ExactGeometrySpatialConstraint ;
+        CBIM:Dimension "XY" ;
+        CBIM:Operator "Contain" ;
+        CBIM:hasObject str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d ;
+        CBIM:isFulfilled true .
+
+    CBIM:RelSpatial_02d4dc55-1161-49ef-aac4-6305ba43f1ef a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "LeftOverlap, Contain, AboveContact" .
+
+    CBIM:RelSpatial_1ab4ba6a-ce43-4f9c-9d2c-7b7b8a06ed18 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066487 ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, AboveContact" .
+
+    CBIM:RelSpatial_21e68b03-54ae-411b-a9ae-391805d7dffe a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-0006670f ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 ;
+        CBIM:inContact true ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, ExactOverlap" .
+
+    CBIM:RelSpatial_2ea6c385-c280-4c20-979e-d10c4f3ade7f a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 ;
+        CBIM:inContact true ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, Contain" .
+
+    CBIM:RelSpatial_36162dfc-8cdc-4de1-88f6-e351630546b3 a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055869 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "ContainedIn, BackOverlap, BelowContact" .
+
+    CBIM:RelSpatial_38415713-2c85-433c-8d69-d71425089885 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-000665b0 ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 ;
+        CBIM:inContact true ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, ExactOverlap" .
+
+    CBIM:RelSpatial_3f112df9-c6b9-4595-9d9c-c0870cd95095 a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055869 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "ContainedIn, BackOverlap, AboveContact" .
+
+    CBIM:RelSpatial_460feb85-71fa-4e6f-979d-54f9fca24a23 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-0006670f ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, BelowContact" .
+
+    CBIM:RelSpatial_4627d042-7686-41b1-96de-b47c3b0c4bac a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f ;
+        CBIM:hasSubject arc:Walls_79c4944d-ebc6-4521-b789-57160c34fce1-000b6aee ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "ContainedIn, FrontOverlap, BelowContact" .
+
+    CBIM:RelSpatial_4da5adb0-2d7d-408f-a0cd-05041c9ba1e7 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066405 ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 ;
+        CBIM:inContact true ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, ExactOverlap" .
+
+    CBIM:RelSpatial_4e43df2d-40da-4788-962a-c36f743e4ac0 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066405 ;
+        CBIM:hasSubject arc:Walls_79c4944d-ebc6-4521-b789-57160c34fce1-000b6aee ;
+        CBIM:inContact false ;
+        CBIM:offset "-50, 0, 0" ;
+        CBIM:topology "Right, FrontOverlap, ExactOverlap" .
+
+    CBIM:RelSpatial_54cf5b3e-c617-4a70-ae0d-ef30288c2ad6 a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "RightOverlap, Contain, BelowContact" .
+
+    CBIM:RelSpatial_5545aa1e-d55a-4076-a14b-be12919e891d a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066487 ;
+        CBIM:hasSubject arc:Walls_79c4944d-ebc6-4521-b789-57160c34fce1-000b6aee ;
+        CBIM:inContact false ;
+        CBIM:offset "50, 0, 0" ;
+        CBIM:topology "Left, FrontOverlap, ExactOverlap" .
+
+    CBIM:RelSpatial_5907d025-36d6-41a2-8b83-8f7a6283b517 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99 ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055869 ;
+        CBIM:inContact false ;
+        CBIM:offset "-50, 200, 0" ;
+        CBIM:topology "Right, Back, Contain" .
+
+    CBIM:RelSpatial_5dfbe780-44b5-47e4-ac35-ab8cc47bee1a a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066405 ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, AboveContact" .
+
+    CBIM:RelSpatial_6fac5f56-233f-458e-b357-0fa52e2f4cf4 a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a ;
+        CBIM:hasSubject arc:Doors_0b37f40b-ef7e-432a-aefa-c451d086a249-000b6814 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "ContainedIn, BackOverlap, AboveContact" .
+
+    CBIM:RelSpatial_7f025f2b-875c-4310-99d9-c9573cadd28d a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-0006670f ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, AboveContact" .
+
+    CBIM:RelSpatial_8192dfe9-d6e6-4636-a582-1fdb254c6397 a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "LeftOverlap, Contain, BelowContact" .
+
+    CBIM:RelSpatial_871454d9-e02c-4038-b155-bfcef923910a a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a ;
+        CBIM:hasSubject arc:Walls_79c4944d-ebc6-4521-b789-57160c34fce1-000b6aee ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "ContainedIn, FrontOverlap, AboveContact" .
+
+    CBIM:RelSpatial_87ba2902-c7ae-4d51-9f1c-a108e9674bc7 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-000665b0 ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, AboveContact" .
+
+    CBIM:RelSpatial_9f3d399b-767e-4e0d-9a58-6295b74ca017 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b ;
+        CBIM:hasSubject arc:Walls_79c4944d-ebc6-4521-b789-57160c34fce1-000b6aee ;
+        CBIM:inContact false ;
+        CBIM:offset "50, 0, 0" ;
+        CBIM:topology "Left, FrontOverlap, Contain" .
+
+    CBIM:RelSpatial_a622741a-8d2a-4b8c-9c8e-da2c8b016020 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99 ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, AboveContact" .
+
+    CBIM:RelSpatial_a64aaf46-3b83-48d7-b344-12b7f7cadd93 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066405 ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, BelowContact" .
+
+    CBIM:RelSpatial_aa473524-fb3f-4250-813e-9b04e2abe031 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-000665b0 ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055869 ;
+        CBIM:inContact false ;
+        CBIM:offset "-50, 0, 0" ;
+        CBIM:topology "Right, BackOverlap, ExactOverlap" .
+
+    CBIM:RelSpatial_b3a73697-ff6d-4fc3-b97d-65c5c8269bfe a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d ;
+        CBIM:inContact true ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, ExactOverlap" .
+
+    CBIM:RelSpatial_b468d21a-367a-4039-adaf-94a36570cd52 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99 ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 ;
+        CBIM:inContact true ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, Contain" .
+
+    CBIM:RelSpatial_c120a4f3-6812-482b-be12-ab17111502a0 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066487 ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, BelowContact" .
+
+    CBIM:RelSpatial_d0d3d843-5181-415b-97d1-1169812e19a1 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-0006670f ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055869 ;
+        CBIM:inContact false ;
+        CBIM:offset "50, 0, 0" ;
+        CBIM:topology "Left, BackOverlap, ExactOverlap" .
+
+    CBIM:RelSpatial_d30ac5bd-c230-4f4f-a2d9-6b5c955d8b3a a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-000665b0 ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, BelowContact" .
+
+    CBIM:RelSpatial_d3c6ac3e-2f36-42cb-9ec4-ae6d4d203aac a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066487 ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 ;
+        CBIM:inContact true ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, ExactOverlap" .
+
+    CBIM:RelSpatial_dad0c59e-41f0-421c-bab4-e97c554d53db a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b ;
+        CBIM:hasSubject arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, AboveContact" .
+
+    CBIM:RelSpatial_df054499-7ecf-4cd9-a887-87ac6c4e64df a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 ;
+        CBIM:inContact true ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "Contain, Contain, Contain" .
+
+    CBIM:RelSpatial_e7a77286-1387-4efe-aa60-01d9bba20f79 a CBIM:RelSpatial ;
+        CBIM:hasObject str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 ;
+        CBIM:inContact false ;
+        CBIM:offset "0, 0, 0" ;
+        CBIM:topology "RightOverlap, Contain, AboveContact" .
+
+    CBIM:RelSpatial_f761e086-5872-483e-9635-9bbe408be33f a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99 ;
+        CBIM:hasSubject arc:Walls_79c4944d-ebc6-4521-b789-57160c34fce1-000b6aee ;
+        CBIM:inContact false ;
+        CBIM:offset "-50, -200, 0" ;
+        CBIM:topology "Right, Front, Contain" .
+
+    CBIM:RelSpatial_fe78504e-4266-4d51-ad40-402536b02b82 a CBIM:RelSpatial ;
+        CBIM:hasObject str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b ;
+        CBIM:hasSubject arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055869 ;
+        CBIM:inContact false ;
+        CBIM:offset "50, 0, 0" ;
+        CBIM:topology "Left, BackOverlap, Contain" .
+
+    str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066405 CBIM:hostedBy arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 .
+
+    str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066487 CBIM:hostedBy arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 .
+
+    str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-000665b0 CBIM:hostedBy arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 .
+
+    str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-0006670f CBIM:hostedBy arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 .
+
+    str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99 CBIM:hostedBy arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 .
+
+    str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b CBIM:hostedBy arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 .
+
+    arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d CBIM:correspondsTo str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a .
+
+    str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f CBIM:correspondsTo arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 .
+
+    str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a CBIM:correspondsTo arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-0005602d .
+
+    arc:Floors_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000561b2 CBIM:correspondsTo str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f .
+
+    arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-00055756 CBIM:host str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066405,
+            str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-000665b0,
+            str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99 .
+
+    arc:Walls_c1ee1959-ea8f-41d2-8e89-aa3c125d3d7c-000557f0 CBIM:host str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066487,
+            str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-0006670f,
+            str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b .
+}
+
+domain:structure {
+    str:Site_e2d1a82d-788c-4e19-8f30-74d1e1a43c8f-00013005 a bot:Site ;
+        rvtprop:category "Site" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:id "77829" ;
+        rvtprop:uniqueId "e2d1a82d-788c-4e19-8f30-74d1e1a43c8f-00013005" ;
+        bot:hasBuilding str:Building_b1652d23-bf45-4002-920f-d1749dbe348c .
+
+    str:Building_b1652d23-bf45-4002-920f-d1749dbe348c a bot:Building ;
+        rvtprop:category "Building" ;
+        rvtprop:id "None" ;
+        rvtprop:uniqueId "b1652d23-bf45-4002-920f-d1749dbe348c" ;
+        bot:hasStorey str:Levels_74e46f31-7d48-47ee-9207-931708e57a52-00000153,
+            str:Levels_74e46f31-7d48-47ee-9207-931708e57a52-00000ae3 .
+
+    str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f a bot:Element ;
+        rvtprop:area 3e+07 ;
+        rvtprop:category "Floors" ;
+        rvtprop:coreThickness 1.5e+02 ;
+        rvtprop:designOption "-1" ;
+        rvtprop:elevationatBottom 3.85e+03 ;
+        rvtprop:elevationatBottomCore 3.85e+03 ;
+        rvtprop:elevationatBottomSurvey 3.85e+03 ;
+        rvtprop:elevationatTop 4e+03 ;
+        rvtprop:elevationatTopCore 4e+03 ;
+        rvtprop:elevationatTopSurvey 4e+03 ;
+        rvtprop:enableAnalyticalModel true ;
+        rvtprop:family "Floor" ;
+        rvtprop:familyandType "Floor" ;
+        rvtprop:heightOffsetFromLevel 0e+00 ;
+        rvtprop:id "427647" ;
+        rvtprop:level "Level2" ;
+        rvtprop:perimeter 2.2e+04 ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:rebarCover-BottomFace "  Interior (slabs, walls, joists) - 10M to 36M <20 mm>" ;
+        rvtprop:rebarCover-OtherFaces "  Interior (slabs, walls, joists) - 10M to 36M <20 mm>" ;
+        rvtprop:rebarCover-TopFace "  Interior (slabs, walls, joists) - 10M to 36M <20 mm>" ;
+        rvtprop:relatedtoMass false ;
+        rvtprop:roomBounding true ;
+        rvtprop:slope 0e+00 ;
+        rvtprop:structural true ;
+        rvtprop:thickness 1.5e+02 ;
+        rvtprop:type "Generic150mm" ;
+        rvtprop:typeId "417611" ;
+        rvtprop:uniqueId "04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f" ;
+        rvtprop:volume 4.5e+09 ;
+        bot:hasSimple3DModel "0.0, 0.0, 3850.0, 6000.0, 5000.0, 4000.0" ;
+        fog:asPly "./database_str/04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f.ply" .
+
+    str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a a bot:Element ;
+        rvtprop:area 3e+07 ;
+        rvtprop:category "Floors" ;
+        rvtprop:coreThickness 1.5e+02 ;
+        rvtprop:designOption "-1" ;
+        rvtprop:elevationatBottom -1.5e+02 ;
+        rvtprop:elevationatBottomCore -1.5e+02 ;
+        rvtprop:elevationatBottomSurvey -1.5e+02 ;
+        rvtprop:elevationatTop 0e+00 ;
+        rvtprop:elevationatTopCore 0e+00 ;
+        rvtprop:elevationatTopSurvey 0e+00 ;
+        rvtprop:enableAnalyticalModel true ;
+        rvtprop:family "Floor" ;
+        rvtprop:familyandType "Floor" ;
+        rvtprop:heightOffsetFromLevel 0e+00 ;
+        rvtprop:id "422026" ;
+        rvtprop:level "Level1" ;
+        rvtprop:perimeter 2.2e+04 ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:rebarCover-BottomFace "  Interior (slabs, walls, joists) - 10M to 36M <20 mm>" ;
+        rvtprop:rebarCover-OtherFaces "  Interior (slabs, walls, joists) - 10M to 36M <20 mm>" ;
+        rvtprop:rebarCover-TopFace "  Interior (slabs, walls, joists) - 10M to 36M <20 mm>" ;
+        rvtprop:relatedtoMass false ;
+        rvtprop:roomBounding true ;
+        rvtprop:slope 0e+00 ;
+        rvtprop:structural true ;
+        rvtprop:thickness 1.5e+02 ;
+        rvtprop:type "Generic150mm" ;
+        rvtprop:typeId "417611" ;
+        rvtprop:uniqueId "f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a" ;
+        rvtprop:volume 4.5e+09 ;
+        bot:hasSimple3DModel "0.0, 0.0, -150.0, 6000.0, 5000.0, 0.0" ;
+        fog:asPly "./database_str/f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a.ply" .
+
+    str:Levels_74e46f31-7d48-47ee-9207-931708e57a52-00000153 a bot:Storey ;
+        rvtprop:buildingStory true ;
+        rvtprop:category "Levels" ;
+        rvtprop:computationHeight 0e+00 ;
+        rvtprop:designOption "-1" ;
+        rvtprop:elevation 0e+00 ;
+        rvtprop:family "Level" ;
+        rvtprop:familyandType "Level" ;
+        rvtprop:id "339" ;
+        rvtprop:name "Level1" ;
+        rvtprop:storyAbove "Default" ;
+        rvtprop:structural false ;
+        rvtprop:type "8mmHead" ;
+        rvtprop:typeId "333" ;
+        rvtprop:uniqueId "74e46f31-7d48-47ee-9207-931708e57a52-00000153" ;
+        bot:containsElement str:Floors_f42c259f-9c96-4118-be47-1d4068c84ef1-0006708a,
+            str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066405,
+            str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066487,
+            str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-000665b0,
+            str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-0006670f .
+
+    str:Levels_74e46f31-7d48-47ee-9207-931708e57a52-00000ae3 a bot:Storey ;
+        rvtprop:buildingStory true ;
+        rvtprop:category "Levels" ;
+        rvtprop:computationHeight 0e+00 ;
+        rvtprop:designOption "-1" ;
+        rvtprop:elevation 4e+03 ;
+        rvtprop:family "Level" ;
+        rvtprop:familyandType "Level" ;
+        rvtprop:id "2787" ;
+        rvtprop:name "Level2" ;
+        rvtprop:storyAbove "Default" ;
+        rvtprop:structural false ;
+        rvtprop:type "8mmHead" ;
+        rvtprop:typeId "333" ;
+        rvtprop:uniqueId "74e46f31-7d48-47ee-9207-931708e57a52-00000ae3" ;
+        bot:containsElement str:Floors_04a8aa58-2a7b-473f-a4c7-6438140763f4-0006867f,
+            str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99,
+            str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b .
+
+    str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066405 a bot:Element ;
+        rvtprop:attachmentJustificationAtBase "MinimumIntersection" ;
+        rvtprop:baseLevel "Level1" ;
+        rvtprop:baseOffset 0e+00 ;
+        rvtprop:baseisAttached true ;
+        rvtprop:category "StructuralColumns" ;
+        rvtprop:columnLocationMark "1-3" ;
+        rvtprop:columnStyle "Vertical" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:enableAnalyticalModel true ;
+        rvtprop:family "M_Concrete-Rectangular-Column" ;
+        rvtprop:familyandType "M_Concrete-Rectangular-Column" ;
+        rvtprop:hostId "-1" ;
+        rvtprop:id "418821" ;
+        rvtprop:length 4e+03 ;
+        rvtprop:level "Level1" ;
+        rvtprop:movesWithGrids true ;
+        rvtprop:offsetFromAttachmentAtBase 0e+00 ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:point "100.0, 4775.0, 0.0" ;
+        rvtprop:rebarCover-OtherFaces "Interior(framing" ;
+        rvtprop:roomBounding true ;
+        rvtprop:structuralMaterial "Concrete" ;
+        rvtprop:topLevel "Level2" ;
+        rvtprop:topOffset 0e+00 ;
+        rvtprop:type "200x450mm" ;
+        rvtprop:typeId "428271" ;
+        rvtprop:uniqueId "a9338721-20fd-4e15-8c41-b0e99432952f-00066405" ;
+        rvtprop:volume 3.5e+08 ;
+        bot:hasSimple3DModel "0.0, 4550.0, 0.0, 200.0, 5000.0, 3850.0" ;
+        fog:asPly "./database_str/a9338721-20fd-4e15-8c41-b0e99432952f-00066405.ply" .
+
+    str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-00066487 a bot:Element ;
+        rvtprop:attachmentJustificationAtBase "MinimumIntersection" ;
+        rvtprop:baseLevel "Level1" ;
+        rvtprop:baseOffset 0e+00 ;
+        rvtprop:baseisAttached true ;
+        rvtprop:category "StructuralColumns" ;
+        rvtprop:columnLocationMark "1-4" ;
+        rvtprop:columnStyle "Vertical" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:enableAnalyticalModel true ;
+        rvtprop:family "M_Concrete-Rectangular-Column" ;
+        rvtprop:familyandType "M_Concrete-Rectangular-Column" ;
+        rvtprop:hostId "-1" ;
+        rvtprop:id "418951" ;
+        rvtprop:length 4e+03 ;
+        rvtprop:level "Level1" ;
+        rvtprop:movesWithGrids true ;
+        rvtprop:offsetFromAttachmentAtBase 0e+00 ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:point "5900.0, 4775.0, 0.0" ;
+        rvtprop:rebarCover-OtherFaces "Interior(framing" ;
+        rvtprop:roomBounding true ;
+        rvtprop:structuralMaterial "Concrete" ;
+        rvtprop:topLevel "Level2" ;
+        rvtprop:topOffset 0e+00 ;
+        rvtprop:type "200x450mm" ;
+        rvtprop:typeId "428271" ;
+        rvtprop:uniqueId "a9338721-20fd-4e15-8c41-b0e99432952f-00066487" ;
+        rvtprop:volume 3.2e+08 ;
+        bot:hasSimple3DModel "5800.0, 4550.0, 0.0, 6000.0, 5000.0, 3850.0" ;
+        fog:asPly "./database_str/a9338721-20fd-4e15-8c41-b0e99432952f-00066487.ply" .
+
+    str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-000665b0 a bot:Element ;
+        rvtprop:attachmentJustificationAtBase "MinimumIntersection" ;
+        rvtprop:baseLevel "Level1" ;
+        rvtprop:baseOffset 0e+00 ;
+        rvtprop:baseisAttached true ;
+        rvtprop:category "StructuralColumns" ;
+        rvtprop:columnLocationMark "2-3" ;
+        rvtprop:columnStyle "Vertical" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:enableAnalyticalModel true ;
+        rvtprop:family "M_Concrete-Rectangular-Column" ;
+        rvtprop:familyandType "M_Concrete-Rectangular-Column" ;
+        rvtprop:hostId "-1" ;
+        rvtprop:id "419248" ;
+        rvtprop:length 4e+03 ;
+        rvtprop:level "Level1" ;
+        rvtprop:movesWithGrids true ;
+        rvtprop:offsetFromAttachmentAtBase 0e+00 ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:point "100.0, 225.0, 0.0" ;
+        rvtprop:rebarCover-OtherFaces "Interior(framing" ;
+        rvtprop:roomBounding true ;
+        rvtprop:structuralMaterial "Concrete" ;
+        rvtprop:topLevel "Level2" ;
+        rvtprop:topOffset 0e+00 ;
+        rvtprop:type "200x450mm" ;
+        rvtprop:typeId "428271" ;
+        rvtprop:uniqueId "a9338721-20fd-4e15-8c41-b0e99432952f-000665b0" ;
+        rvtprop:volume 3.5e+08 ;
+        bot:hasSimple3DModel "0.0, 0.0, 0.0, 200.0, 450.0, 3850.0" ;
+        fog:asPly "./database_str/a9338721-20fd-4e15-8c41-b0e99432952f-000665b0.ply" .
+
+    str:StructuralColumns_a9338721-20fd-4e15-8c41-b0e99432952f-0006670f a bot:Element ;
+        rvtprop:attachmentJustificationAtBase "MinimumIntersection" ;
+        rvtprop:baseLevel "Level1" ;
+        rvtprop:baseOffset 0e+00 ;
+        rvtprop:baseisAttached true ;
+        rvtprop:category "StructuralColumns" ;
+        rvtprop:columnLocationMark "2-4" ;
+        rvtprop:columnStyle "Vertical" ;
+        rvtprop:designOption "-1" ;
+        rvtprop:enableAnalyticalModel true ;
+        rvtprop:family "M_Concrete-Rectangular-Column" ;
+        rvtprop:familyandType "M_Concrete-Rectangular-Column" ;
+        rvtprop:hostId "-1" ;
+        rvtprop:id "419599" ;
+        rvtprop:length 4e+03 ;
+        rvtprop:level "Level1" ;
+        rvtprop:movesWithGrids true ;
+        rvtprop:offsetFromAttachmentAtBase 0e+00 ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:point "5900.0, 225.0, 0.0" ;
+        rvtprop:rebarCover-BottomFace "Interior(framing" ;
+        rvtprop:rebarCover-OtherFaces "Interior(framing" ;
+        rvtprop:roomBounding true ;
+        rvtprop:structuralMaterial "Concrete" ;
+        rvtprop:topLevel "Level2" ;
+        rvtprop:topOffset 0e+00 ;
+        rvtprop:type "200x450mm" ;
+        rvtprop:typeId "428271" ;
+        rvtprop:uniqueId "a9338721-20fd-4e15-8c41-b0e99432952f-0006670f" ;
+        rvtprop:volume 3.2e+08 ;
+        bot:hasSimple3DModel "5800.0, 0.0, 0.0, 6000.0, 450.0, 3850.0" ;
+        fog:asPly "./database_str/a9338721-20fd-4e15-8c41-b0e99432952f-0006670f.ply" .
+
+    str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99 a bot:Element ;
+        rvtprop:category "StructuralFraming" ;
+        rvtprop:cross-SectionRotation 0e+00 ;
+        rvtprop:cutLength 4.1e+03 ;
+        rvtprop:designOption "-1" ;
+        rvtprop:direction_vector "0.0, 4100.0, 0.0" ;
+        rvtprop:elevationatBottom 3.25e+03 ;
+        rvtprop:elevationatTop 3.85e+03 ;
+        rvtprop:enableAnalyticalModel true ;
+        rvtprop:endAttachmentType "EndElevation" ;
+        rvtprop:endLevelOffset 0e+00 ;
+        rvtprop:endpoint_xyz "100.0, 4550.0, 4000.0" ;
+        rvtprop:family "M_Concrete-RectangularBeam" ;
+        rvtprop:familyandType "M_Concrete-RectangularBeam" ;
+        rvtprop:hostId "-1" ;
+        rvtprop:id "425369" ;
+        rvtprop:joinStatus "Bothjoinsenabled" ;
+        rvtprop:length 4.1e+03 ;
+        rvtprop:orientation "Normal" ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:rebarCover-BottomFace "Interior(framing" ;
+        rvtprop:rebarCover-OtherFaces "Interior(framing" ;
+        rvtprop:referenceLevel "Level2" ;
+        rvtprop:referenceLevelElevation 4e+03 ;
+        rvtprop:startAttachmentType "EndElevation" ;
+        rvtprop:startLevelOffset 0e+00 ;
+        rvtprop:startpoint_xyz "100.0, 450.0, 4000.0" ;
+        rvtprop:structuralMaterial "Concrete" ;
+        rvtprop:structuralUsage "Girder" ;
+        rvtprop:type "200x600mm" ;
+        rvtprop:typeId "428264" ;
+        rvtprop:uniqueId "04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99" ;
+        rvtprop:volume 4.9e+08 ;
+        rvtprop:workPlane "Level" ;
+        rvtprop:yJustification "Origin" ;
+        rvtprop:yOffsetValue 0e+00 ;
+        rvtprop:yzJustification "Uniform" ;
+        rvtprop:zJustification "Top" ;
+        rvtprop:zOffsetValue -1.5e+02 ;
+        bot:hasSimple3DModel "0.0, 450.0, 3250.0, 200.0, 4550.0, 3850.0" ;
+        fog:asPly "./database_str/04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d99.ply" .
+
+    str:StructuralFraming_04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b a bot:Element ;
+        rvtprop:category "StructuralFraming" ;
+        rvtprop:cross-SectionRotation 0e+00 ;
+        rvtprop:cutLength 4.55e+03 ;
+        rvtprop:designOption "-1" ;
+        rvtprop:direction_vector "0.0, 4550.0, 0.0" ;
+        rvtprop:elevationatBottom 3.25e+03 ;
+        rvtprop:elevationatTop 3.85e+03 ;
+        rvtprop:enableAnalyticalModel true ;
+        rvtprop:endAttachmentType "EndElevation" ;
+        rvtprop:endLevelOffset 0e+00 ;
+        rvtprop:endpoint_xyz "5900.0, 4775.0, 4000.0" ;
+        rvtprop:family "M_Concrete-RectangularBeam" ;
+        rvtprop:familyandType "M_Concrete-RectangularBeam" ;
+        rvtprop:hostId "-1" ;
+        rvtprop:id "425371" ;
+        rvtprop:joinStatus "Bothjoinsenabled" ;
+        rvtprop:length 4.55e+03 ;
+        rvtprop:orientation "Normal" ;
+        rvtprop:phaseCreated "NewConstruction" ;
+        rvtprop:rebarCover-BottomFace "Interior(framing" ;
+        rvtprop:rebarCover-OtherFaces "Interior(framing" ;
+        rvtprop:referenceLevel "Level2" ;
+        rvtprop:referenceLevelElevation 4e+03 ;
+        rvtprop:startAttachmentType "EndElevation" ;
+        rvtprop:startLevelOffset 0e+00 ;
+        rvtprop:startpoint_xyz "5900.0, 225.0, 4000.0" ;
+        rvtprop:structuralMaterial "Concrete" ;
+        rvtprop:structuralUsage "Girder" ;
+        rvtprop:type "200x600mm" ;
+        rvtprop:typeId "428264" ;
+        rvtprop:uniqueId "04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b" ;
+        rvtprop:volume 5.5e+08 ;
+        rvtprop:workPlane "Level" ;
+        rvtprop:yJustification "Origin" ;
+        rvtprop:yOffsetValue 0e+00 ;
+        rvtprop:yzJustification "Uniform" ;
+        rvtprop:zJustification "Top" ;
+        rvtprop:zOffsetValue -1.5e+02 ;
+        bot:hasSimple3DModel "5800.0, 225.0, 3250.0, 6000.0, 4775.0, 3850.0" ;
+        fog:asPly "./database_str/04a8aa58-2a7b-473f-a4c7-6438140763f4-00067d9b.ply" .
+}
